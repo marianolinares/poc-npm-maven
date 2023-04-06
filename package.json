@@ -1,0 +1,15 @@
+{
+  "name": "npm-to-maven-adapator",
+  "version": "0.0.1-SNAPSHOT",
+  "description": "Example of node project with maven build scripts",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf target/generated-sources/asyncapi",
+    "generate-asyncapi": "asyncapi generate models java node_modules/sisuwrap-sisu-event-in-sisupackingorder-topic-event-stable/asyncapi.yml --output target/generated-sources/asyncapi/com/inditex/infrastructure --packageName=com.inditex.infrastructure"
+  },
+  "devDependencies": {
+    "@asyncapi/cli": "^0.31.2",
+    "rimraf": "^4.1.2",
+    "sisuwrap-sisu-event-in-sisupackingorder-topic-event-stable": "^0.1.6-SNAPSHOT"
+  }
+}
